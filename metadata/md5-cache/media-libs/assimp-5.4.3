@@ -1,0 +1,14 @@
+BDEPEND=dev-util/ninja dev-util/cmake
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-libs/boost:= sys-libs/zlib[minizip] samples? ( media-libs/freeglut virtual/opengl x11-libs/libX11 )
+DESCRIPTION=Importer library to import assets from 3D files
+EAPI=7
+HOMEPAGE=https://github.com/assimp/assimp
+IUSE=samples
+KEYWORDS=*
+LICENSE=BSD
+RDEPEND=dev-libs/boost:= sys-libs/zlib[minizip] samples? ( media-libs/freeglut virtual/opengl x11-libs/libX11 )
+SLOT=0/5.2.5
+SRC_URI=https://github.com/assimp/assimp/tarball/c35200e38ea8f058812b83de2ef32c6093b0ece2 -> assimp-5.4.3-c35200e.tar.gz
+_eclasses_=cmake	ac7cb516f6a288b6a82bc0649ce49878	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	d0939f99dd528dd0c5ec25284877bf5c	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	e7575bc4a90349d76e72777013b2bbc2	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	14d00d009167652b1fa363e55effe213
+_md5_=6bee38d2ca739fdba51a0d46c4d5c84f

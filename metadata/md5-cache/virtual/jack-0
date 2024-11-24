@@ -1,0 +1,7 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual for JACK Audio Connection Kit
+EAPI=5
+KEYWORDS=*
+RDEPEND=|| ( media-sound/jack2 media-sound/jack-audio-connection-kit )
+SLOT=0
+_md5_=6c842c71d50553a36e615e2151221eff

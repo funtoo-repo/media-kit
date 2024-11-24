@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig >=virtual/rust-1.37.0
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=dev-libs/openssl:0= alsa? ( media-libs/alsa-lib ) dbus? ( sys-apps/dbus ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio )
+DESCRIPTION=A spotify daemon
+EAPI=7
+HOMEPAGE=https://github.com/Spotifyd/spotifyd
+IUSE=+alsa dbus portaudio pulseaudio rodio debug
+KEYWORDS=*
+LICENSE=Apache-2.0 BSD BSD-2 GPL-3 ISC MIT MPL-2.0 ZLIB
+RDEPEND=dev-libs/openssl:0= alsa? ( media-libs/alsa-lib ) dbus? ( sys-apps/dbus ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio )
+REQUIRED_USE=|| ( alsa portaudio pulseaudio rodio ) rodio? ( alsa )
+SLOT=0
+SRC_URI=https://github.com/Spotifyd/spotifyd/tarball/eda388f98486644b7f3667fc4fed9e5c0f49fcbc -> spotifyd-0.3.5-eda388f.tar.gz https://direct-github.funmore.org/a8/48/e8/a848e862b2de4b8b3fd896a551ab78834eb5622356d179573f56b9a3e0688c097f76aa1892a8468219792ee59519f08bac520b36bb973285f5b581c362e88759 -> spotifyd-0.3.5-funtoo-crates-bundle-37a7930b79097d8d8d6469efa8af57563b7295fae35b11243cc63575df672db3f22d5f5d5fb9a727678f27addba21e03148fc673a4f3ece0c03daba228512320.tar.gz
+_eclasses_=cargo	a3e90d3e6ca8541d967cff212149cffc	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=ff79f4a86ab146caff61404b7d58fd0c

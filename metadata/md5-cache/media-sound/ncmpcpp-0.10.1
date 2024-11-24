@@ -1,0 +1,12 @@
+BDEPEND=dev-libs/boost sys-libs/ncurses sys-libs/readline curl? ( net-misc/curl ) taglib? ( media-libs/taglib ) visualizer? ( sci-libs/fftw ) >=media-libs/libmpdclient-2.8
+DEFINED_PHASES=configure
+DESCRIPTION=Featureful ncurses based MPD client inspired by ncmpc
+EAPI=7
+HOMEPAGE=https://rybczak.net/ncmpcpp
+IUSE=curl fftw taglib visualizer
+KEYWORDS=*
+LICENSE=GPL-2
+RDEPEND=dev-libs/boost sys-libs/ncurses sys-libs/readline curl? ( net-misc/curl ) taglib? ( media-libs/taglib ) visualizer? ( sci-libs/fftw ) >=media-libs/libmpdclient-2.8
+SLOT=0
+SRC_URI=https://github.com/ncmpcpp/ncmpcpp/tarball/3e6d992b938de9ba3019302027bd64dbcab6f8c6 -> ncmpcpp-0.10.1-3e6d992.tar.gz
+_md5_=af1d19e143982d93e41dce58aead4777
