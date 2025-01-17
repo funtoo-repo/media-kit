@@ -12,4 +12,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.53.440.g7b2f582a_amd64.deb -> spotify-1.2.53.440.deb
 _eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	pax-utils	db85a3c508cf82c45f24b2723791cc93	unpacker	cbd6624f820a4289653f5dcb999bea7a	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	14d00d009167652b1fa363e55effe213
-_md5_=f690aba6440970f1b97556c2d3a39693
+_md5_=367686b083294e00d0b3c7d08d649c4b
