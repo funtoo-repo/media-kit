@@ -6,7 +6,7 @@ inherit toolchain-funcs
 
 DESCRIPTION="SANE backend for AirScan (eSCL) and WSD document scanners"
 HOMEPAGE="https://github.com/alexpevzner/sane-airscan"
-SRC_URI="https://github.com/alexpevzner/sane-airscan/tarball/a086d81a1222194804a075cac496c821023ae23a -> sane-airscan-0.99.31-a086d81.tar.gz"
+SRC_URI="https://github.com/alexpevzner/sane-airscan/tarball/1ff182b4c980d1e76b27d5875006790cb59d73f3 -> sane-airscan-0.99.32-1ff182b.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
