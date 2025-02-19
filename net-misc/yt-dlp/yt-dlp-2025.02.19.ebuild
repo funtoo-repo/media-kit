@@ -7,7 +7,7 @@ inherit optfeature python-single-r1
 
 DESCRIPTION="A youtube-dl fork with additional features and fixes"
 HOMEPAGE="https://github.com/yt-dlp/yt-dlp"
-SRC_URI="https://github.com/yt-dlp/yt-dlp/tarball/5ff7a43623e3a92270f66a7e37b5fc53d7a57fdf -> yt-dlp-2025.01.26-5ff7a43.tar.gz"
+SRC_URI="https://github.com/yt-dlp/yt-dlp/tarball/9c3e8b16967cb6582712b6b7e4c107631d3873d0 -> yt-dlp-2025.02.19-9c3e8b1.tar.gz"
 
 LICENSE="Unlicense"
 SLOT="0"
