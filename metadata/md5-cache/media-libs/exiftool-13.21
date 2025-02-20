@@ -9,6 +9,6 @@ KEYWORDS=*
 LICENSE=|| ( Artistic GPL-1+ )
 RDEPEND=dev-lang/perl:=
 SLOT=0
-SRC_URI=https://github.com/exiftool/exiftool/tarball/b46a76f71c8cd0651ac7578e6e4b0af655dbb976 -> exiftool-13.19-b46a76f.tar.gz
+SRC_URI=https://github.com/exiftool/exiftool/tarball/4afbec9ae3c2f1522b08e0586f05ab046791d520 -> exiftool-13.21-4afbec9.tar.gz
 _eclasses_=multiprocessing	cac3169468f893670dac3e7cb940e045	perl-functions	d0d18687b96ee3d2307b88eefdd1735b	perl-module	768f1dfc0a27ff40f1ece5cb8c22714a
-_md5_=12dc21d2c34023f1cd67b068e42eb7ac
+_md5_=cd637d47a1afd8df1fb15b38f0b201c2
