@@ -9,10 +9,10 @@ inherit cmake python-any-r1
 
 DESCRIPTION="EXIF, IPTC and XMP metadata C++ library and command line utility"
 HOMEPAGE="https://www.exiv2.org/"
-SRC_URI="https://github.com/Exiv2/exiv2/tarball/4488c6f2a9d3456ca3bc6f54657f9d32502aa2f7 -> exiv2-0.28.4-4488c6f.tar.gz"
+SRC_URI="https://github.com/Exiv2/exiv2/tarball/f80f954bf2ff65ea94915ace949f982bf466ae69 -> exiv2-0.28.5-f80f954.tar.gz"
 LICENSE="GPL-2"
 
-S="${WORKDIR}/Exiv2-exiv2-4488c6f"
+S="${WORKDIR}/Exiv2-exiv2-f80f954"
 
 SLOT="0/$(ver_cut 1-2)"
 KEYWORDS="*"
@@ -91,6 +91,8 @@ src_test() {
 }
 
 src_install() {
+    cmake_src_install
+
 	use xmp && DOCS+=( doc/{COPYING-XMPSDK,README-XMP,cmdxmp.txt} )
 
 	einstalldocs
