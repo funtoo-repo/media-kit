@@ -29,6 +29,7 @@ BDEPEND="
 	)
 	nls? ( sys-devel/gettext )
 	dev-libs/inih
+	app-arch/brotli
 "
 RDEPEND="
     >=virtual/libiconv-0-r1
