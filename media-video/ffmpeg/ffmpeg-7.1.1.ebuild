@@ -2,48 +2,17 @@
 
 EAPI=7
 
-# Subslot: libavutil major.libavcodec major.libavformat major
-# Since FFmpeg ships several libraries, subslot is kind of limited here.
-# Most consumers will use those three libraries, if a "less used" library
-# changes its soname, consumers will have to be rebuilt the old way
-# (preserve-libs).
-# If, for example, a package does not link to libavformat and only libavformat
-# changes its ABI then this package will be rebuilt needlessly. Hence, such a
-# package is free _not_ to := depend on FFmpeg but I would strongly encourage
-# doing so since such a case is unlikely.
-FFMPEG_SUBSLOT=56.58.58
-
 inherit eutils flag-o-matic multilib multilib-minimal toolchain-funcs
 
 DESCRIPTION="Complete solution to record/convert/stream audio and video. Includes libavcodec."
 HOMEPAGE="https://ffmpeg.org/"
-SRC_URI="https://ffmpeg.org/releases/${P/_/-}.tar.bz2"
+SRC_URI="https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz -> ffmpeg-7.1.1.tar.xz
+"
+LICENSE="GPL-3 LGPL-3"
+
 FFMPEG_REVISION="${PV#*_p}"
 
-SLOT="0/${FFMPEG_SUBSLOT}"
-LICENSE="
-	!gpl? ( LGPL-2.1 )
-	gpl? ( GPL-2 )
-	amr? (
-		gpl? ( GPL-3 )
-		!gpl? ( LGPL-3 )
-	)
-	gmp? (
-		gpl? ( GPL-3 )
-		!gpl? ( LGPL-3 )
-	)
-	libaribb24? (
-		gpl? ( GPL-3 )
-		!gpl? ( LGPL-3 )
-	)
-	encode? (
-		amrenc? (
-			gpl? ( GPL-3 )
-			!gpl? ( LGPL-3 )
-		)
-	)
-	samba? ( GPL-3 )
-"
+SLOT="0"
 KEYWORDS="*"
 
 # Options to use as use_enable in the foo[:bar] form.
@@ -82,7 +51,7 @@ FFMPEG_ENCODER_FLAG_MAP=(
 	amrenc:libvo-amrwbenc mp3:libmp3lame
 	kvazaar:libkvazaar libaom
 	openh264:libopenh264 rav1e:librav1e snappy:libsnappy theora:libtheora twolame:libtwolame
-	wavpack:libwavpack webp:libwebp x264:libx264 x265:libx265 xvid:libxvid
+	webp:libwebp x264:libx264 x265:libx265 xvid:libxvid
 )
 
 IUSE="
@@ -175,7 +144,6 @@ RDEPEND="
 			>=media-libs/libogg-1.3.0[${MULTILIB_USEDEP}]
 		)
 		twolame? ( >=media-sound/twolame-0.3.13-r1[${MULTILIB_USEDEP}] )
-		wavpack? ( >=media-sound/wavpack-4.60.1-r1[${MULTILIB_USEDEP}] )
 		webp? ( >=media-libs/libwebp-0.3.0:=[${MULTILIB_USEDEP}] )
 		x264? ( >=media-libs/x264-0.0.20130506:=[${MULTILIB_USEDEP}] )
 		x265? ( >=media-libs/x265-1.6:=[${MULTILIB_USEDEP}] )
@@ -308,14 +276,6 @@ RESTRICT="
 
 S=${WORKDIR}/${P/_/-}
 
-PATCHES=(
-	"${FILESDIR}"/chromium-r1.patch
-	"${FILESDIR}"/${PN}-4.3-fix-build-without-SSSE3.patch
-	"${FILESDIR}"/${PN}-4.3-altivec-novsx-yuv2rgb.patch
-	"${FILESDIR}"/${PN}-4.3.1-new-sdl2-version-scheme.patch
-	"${FILESDIR}"/${PN}-4.3.1-fix-shr-type-mismatch.patch
-)
-
 MULTILIB_WRAPPED_HEADERS=(
 	/usr/include/libavutil/avconfig.h
 )
@@ -329,7 +289,6 @@ src_prepare() {
 		export revision=git-N-${FFMPEG_REVISION}
 	fi
 	default
-	echo 'include $(SRC_PATH)/ffbuild/libffmpeg.mak' >> Makefile || die
 }
 
 multilib_src_configure() {
@@ -416,7 +375,6 @@ multilib_src_configure() {
 	# Mandatory configuration
 	myconf=(
 		--enable-avfilter
-		--enable-avresample
 		--disable-stripping
 		# This is only for hardcoded cflags; those are used in configure checks that may
 		# interfere with proper detections, bug #671746 and bug #645778
