@@ -6,7 +6,7 @@ inherit autotools bash-completion-r1
 
 DESCRIPTION="Screen capture utility using imlib2 library"
 HOMEPAGE="https://github.com/resurrecting-open-source-projects/scrot"
-SRC_URI="https://github.com/resurrecting-open-source-projects/scrot/tarball/ff3d914008e412b2da32696f5ff3328203429774 -> scrot-1.12-ff3d914.tar.gz"
+SRC_URI="https://github.com/resurrecting-open-source-projects/scrot/tarball/7a169bc19d5a63707ea73d88210e7e8b72a1cd08 -> scrot-1.12.1-7a169bc.tar.gz"
 #"https://github.com/resurrecting-open-source-projects/${PN}/releases/download/${PV}/${P}.tar.gz"
 
 LICENSE="feh LGPL-2+"
