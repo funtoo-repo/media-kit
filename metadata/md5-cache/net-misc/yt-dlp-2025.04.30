@@ -9,6 +9,6 @@ LICENSE=Unlicense
 RDEPEND=>=dev-lang/python-3.7 || ( app-text/pandoc-bin app-text/pandoc ) brotli? ( app-arch/brotli ) certifi? ( dev-python/certifi ) ffmpeg? ( media-video/ffmpeg ) xattr? ( dev-python/pyxattr )
 REQUIRED_USE=^^ ( python_single_target_python3_10 python_single_target_python3_7 python_single_target_python3_9 python_single_target_python3_8 )
 SLOT=0
-SRC_URI=https://github.com/yt-dlp/yt-dlp/tarball/349f36606fa7fb658216334a73ac7825c13503c2 -> yt-dlp-2025.03.31-349f366.tar.gz
+SRC_URI=https://github.com/yt-dlp/yt-dlp/tarball/b77e5a553a5d91bd059c3e3f1f3698be417132bf -> yt-dlp-2025.04.30-b77e5a5.tar.gz
 _eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	optfeature	8e0c2c8d30c10832f241f5e76ef3f0c7	python-single-r1	ce99dfba1cad0514af51a32b2b6964af	python-utils-r1	d3f9ec72badd0291b655682d67876adc	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
-_md5_=be4594f23390070ae8859891af27067d
+_md5_=7b59032990cb967c6ed56d766bca5fc0
