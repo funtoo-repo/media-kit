@@ -10,8 +10,8 @@ URI="https://downloads.plex.tv/plex-media-server-new"
 DESCRIPTION="A free media library that is intended for use with a plex client."
 HOMEPAGE="http://www.plex.tv/"
 SRC_URI="
-	amd64? ( https://downloads.plex.tv/plex-media-server-new/1.41.6.9685-d301f511a/debian/plexmediaserver_1.41.6.9685-d301f511a_amd64.deb -> plexmediaserver_1.41.6.9685-d301f511a_amd64.deb )
-	x86? ( https://downloads.plex.tv/plex-media-server-new/1.41.6.9685-d301f511a/debian/plexmediaserver_1.41.6.9685-d301f511a_i386.deb -> plexmediaserver_1.41.6.9685-d301f511a_i386.deb )
+	amd64? ( https://downloads.plex.tv/plex-media-server-new/1.41.7.9799-5bce000f7/debian/plexmediaserver_1.41.7.9799-5bce000f7_amd64.deb -> plexmediaserver_1.41.7.9799-5bce000f7_amd64.deb )
+	x86? ( https://downloads.plex.tv/plex-media-server-new/1.41.7.9799-5bce000f7/debian/plexmediaserver_1.41.7.9799-5bce000f7_i386.deb -> plexmediaserver_1.41.7.9799-5bce000f7_i386.deb )
 "
 
 SLOT="0"
