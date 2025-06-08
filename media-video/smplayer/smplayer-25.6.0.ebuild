@@ -11,7 +11,7 @@ inherit plocale qmake-utils toolchain-funcs xdg
 
 DESCRIPTION="Free Media Player for Linux with YouTube support."
 HOMEPAGE="https://smplayer.info/"
-SRC_URI="https://github.com/smplayer-dev/smplayer/tarball/dc37d6faef17b1892d30ab31ec1295ec09e803ea -> smplayer-24.5.0-dc37d6f.tar.gz"
+SRC_URI="https://github.com/smplayer-dev/smplayer/tarball/4a27de33a4cab71215002f138daab1e3c69ca7ef -> smplayer-25.6.0-4a27de3.tar.gz"
 
 LICENSE="GPL-2+ BSD-2"
 SLOT="0"
