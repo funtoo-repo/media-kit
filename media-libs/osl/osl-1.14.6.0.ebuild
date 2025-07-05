@@ -8,7 +8,7 @@ LLVM_MAX_SLOT=16
 
 DESCRIPTION="Advanced shading language for production GI renderers"
 HOMEPAGE="http://opensource.imageworks.com/?p=osl"
-SRC_URI="https://api.github.com/repos/AcademySoftwareFoundation/OpenShadingLanguage/tarball/v1.14.5.1 -> osl-1.14.5.1.tar.gz"
+SRC_URI="https://api.github.com/repos/AcademySoftwareFoundation/OpenShadingLanguage/tarball/v1.14.6.0 -> osl-1.14.6.0.tar.gz"
 
 LICENSE="BSD"
 SLOT="0/$(ver_cut 2)"
