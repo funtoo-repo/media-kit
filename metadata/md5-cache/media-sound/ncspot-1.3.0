@@ -1,0 +1,12 @@
+BDEPEND=virtual/rust >=virtual/rust-1.37.0
+DEFINED_PHASES=compile configure install test unpack
+DESCRIPTION=Cross-platform ncurses Spotify client written in Rust, inspired by ncmpc and the likes.
+EAPI=7
+HOMEPAGE=https://github.com/hrkfdn/ncspot
+IUSE=debug
+KEYWORDS=*
+LICENSE=BSD
+SLOT=0
+SRC_URI=https://github.com/hrkfdn/ncspot/tarball/7c74e4d2f7a41189ea7bd829ef5fc17abaf0daaf -> ncspot-1.3.0-7c74e4d.tar.gz https://direct-github.funmore.org/b4/11/07/b41107fc91e0c7762b6b6ca917dcb90aa26350f9054eec98c7a60d0ca19233fa788e2b487c1250f92d9d63593e1b7fb6a61b451dd709f95f56b58994e57d2868 -> ncspot-1.3.0-funtoo-crates-bundle-5e68d4c7d18847098ad8188d09304671aabe9b4f37e6cb9040e89c4705deedb69dcaad170d98220916683066751208ea6dca32ae507a9aead7918b1b18a78f43.tar.gz
+_eclasses_=cargo	a3e90d3e6ca8541d967cff212149cffc	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=e5c2a7575562cd97c6a479ef43768286
