@@ -15,7 +15,7 @@ IUSE="+aac +alsa ampache bs2b cdda cue ffmpeg flac fluidsynth gme +http jack lam
 	libnotify libsamplerate lirc mms modplug +mp3 nls opengl opus osd pulseaudio
 	scrobbler sdl sid sndfile soxr speedpitch streamtuner vorbis wavpack X"
 REQUIRED_USE="ampache? ( http ) streamtuner? ( http )"
-SRC_URI="https://github.com/audacious-media-player/audacious-plugins/tarball/f6ff6b29a68582e629ac34b61405ee5e0a13efcc -> audacious-plugins-4.4.2-f6ff6b2.tar.gz"
+SRC_URI="https://github.com/audacious-media-player/audacious-plugins/tarball/3955410f85ba0894d77511b60271cdd840450fac -> audacious-plugins-4.5-3955410.tar.gz"
 
 # The following plugins REQUIRE a GUI build of audacious, because non-GUI
 # builds do NOT install the libaudgui library & headers.
