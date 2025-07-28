@@ -9,8 +9,8 @@ S="${WORKDIR}"/${P}/src
 DESCRIPTION=""
 HOMEPAGE="http://www.meshlab.net"
 SRC_URI="
-	https://github.com/cnr-isti-vclab/meshlab/tarball/2dbd2f4b12df3b47d8777b2b4a43cabd9e425735 -> meshlab-2023.12-2dbd2f4.tar.gz
-	https://github.com/cnr-isti-vclab/vcglib/tarball/6ac9e0c647a63e0e037813a1e92bd050d13efc85 -> vcglib-2023.12-6ac9e0c.tar.gz
+	https://github.com/cnr-isti-vclab/meshlab/tarball/dc48b91ae562756a6988048c5d5c7f1d2b687256 -> meshlab-2025.07-dc48b91.tar.gz
+	https://github.com/cnr-isti-vclab/vcglib/tarball/c94ef4e12e9ea3ae986d9af91005be8328d13719 -> vcglib-2025.07-c94ef4e.tar.gz
 "
 
 LICENSE="GPL-2"
