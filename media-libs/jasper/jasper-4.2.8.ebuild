@@ -7,7 +7,7 @@ inherit cmake
 DESCRIPTION="Implementation of the codec specified in the JPEG-2000 Part-1 standard"
 HOMEPAGE="https://www.ece.uvic.ca/~mdadams/jasper/"
 
-SRC_URI="https://github.com/jasper-software/jasper/tarball/af1a586dca51821f6cad26df88e0086e1edc177e -> jasper-4.2.7-af1a586.tar.gz"
+SRC_URI="https://github.com/jasper-software/jasper/tarball/018d51cad01c0721f34e9f937c02cbb106d58773 -> jasper-4.2.8-018d51c.tar.gz"
 
 # We limit memory usage to 128 MiB by default, specified in bytes
 : ${JASPER_MEM_LIMIT:=134217728}
