@@ -8,6 +8,6 @@ KEYWORDS=*
 LICENSE=GPL-2
 RDEPEND=dev-libs/popt >=media-libs/libgphoto2-2.5.17:=[exif?] aalib? ( media-libs/aalib virtual/jpeg:0 ) exif? ( media-libs/libexif ) ncurses? ( dev-libs/cdk:0= ) readline? ( sys-libs/readline:0= )
 SLOT=0
-SRC_URI=https://github.com/gphoto/gphoto2/archive/v2.5.28.tar.gz -> gphoto2-2.5.28.tar.gz
+SRC_URI=https://github.com/gphoto/gphoto2/archive/v2.5.32.tar.gz -> gphoto2-2.5.32.tar.gz
 _eclasses_=autotools	e9ade2787b2f54643c7cdffbfa1cca9c	eqawarn	bb3d80ca38bc542ed397ab65f64256a6	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
-_md5_=300f68a446585b7e7cf210c77d89b039
+_md5_=12d8e30ced42976dc98aee4bb29cae2e
