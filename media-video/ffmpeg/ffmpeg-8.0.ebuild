@@ -6,7 +6,7 @@ inherit eutils flag-o-matic multilib multilib-minimal toolchain-funcs
 
 DESCRIPTION="Complete solution to record/convert/stream audio and video. Includes libavcodec."
 HOMEPAGE="https://ffmpeg.org/"
-SRC_URI="https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz -> ffmpeg-7.1.1.tar.xz
+SRC_URI="https://ffmpeg.org/releases/ffmpeg-8.0.tar.xz -> ffmpeg-8.0.tar.xz
 "
 LICENSE="GPL-3 LGPL-3"
 
