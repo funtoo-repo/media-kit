@@ -6,12 +6,12 @@ inherit cmake
 
 DESCRIPTION="PulseAudio emulation for ALSA"
 HOMEPAGE="https://github.com/i-rinat/apulse"
-SRC_URI="https://github.com/i-rinat/apulse/tarball/23a721dab5d3befb9d8cc09a19ec05d6bebf8d8a -> apulse-0.1.13-23a721d.tar.gz"
+SRC_URI="https://github.com/i-rinat/apulse/tarball/da98565043fc197da43633111723a7f225b6863a -> apulse-0.1.14-da98565.tar.gz"
 
 LICENSE="MIT LGPL-2.1"
 SLOT="0"
 KEYWORDS="*"
-S="${WORKDIR}/i-rinat-apulse-23a721d"
+S="${WORKDIR}/i-rinat-apulse-da98565"
 
 IUSE="debug +sdk"
 
