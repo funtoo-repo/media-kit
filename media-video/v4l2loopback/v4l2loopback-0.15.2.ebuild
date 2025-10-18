@@ -5,7 +5,7 @@ EAPI=7
 inherit linux-mod-r1 toolchain-funcs
 
 KEYWORDS="amd64 x86"
-SRC_URI="https://github.com/umlaeute/v4l2loopback/tarball/7546a42a66d856933a75c2b0896cb735e3ca00c0 -> v4l2loopback-0.15.1-7546a42.tar.gz"
+SRC_URI="https://github.com/umlaeute/v4l2loopback/tarball/c394f8fb2c168932055c2577247c42390198d7c9 -> v4l2loopback-0.15.2-c394f8f.tar.gz"
 
 DESCRIPTION="v4l2 loopback device whose output is its own input"
 HOMEPAGE="https://github.com/umlaeute/v4l2loopback"
@@ -13,7 +13,7 @@ HOMEPAGE="https://github.com/umlaeute/v4l2loopback"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="examples"
-S="${WORKDIR}/umlaeute-v4l2loopback-7546a42"
+S="${WORKDIR}/umlaeute-v4l2loopback-c394f8f"
 CONFIG_CHECK="VIDEO_DEV"
 
 pkg_setup() {
