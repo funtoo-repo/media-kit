@@ -6,7 +6,7 @@ inherit cmake xdg
 
 DESCRIPTION="portmidi is a cross-platform MIDI input/output library"
 HOMEPAGE="https://github.com/PortMidi/portmidi"
-SRC_URI="https://github.com/PortMidi/portmidi/tarball/8341a6713842d2374c3aad8998d43b20ad0db435 -> portmidi-2.0.7-8341a67.tar.gz"
+SRC_URI="https://github.com/PortMidi/portmidi/tarball/101dac9455e2718512c94e24cbcae6a6f34b908b -> portmidi-2.0.8-101dac9.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
